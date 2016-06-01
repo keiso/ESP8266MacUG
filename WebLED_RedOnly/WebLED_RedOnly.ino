@@ -12,7 +12,7 @@ const int ledRed    = 12;
 
 void handleRoot() {
   String html = "<h1>hello from esp8266!</h1>";
-  html += "<a href=\"/led?r=255\">red</a></p>";
+  html += "<p><a href=\"/led?r=255\">red</a></p>";
   server.send(200, "text/html", html);
 }
 
